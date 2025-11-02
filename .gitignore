@@ -25,4 +25,4 @@ logs
 
 yarn.lock
 
-src/config.ts
+app/config.ts
