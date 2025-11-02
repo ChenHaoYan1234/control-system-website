@@ -6,5 +6,10 @@ export default defineNuxtConfig({
     pages: true,
     devServer: {
         port: 8080
+    },
+    app:{
+        head:{
+            title: "校园环境管理系统"
+        }
     }
 })
