@@ -11,11 +11,18 @@
     },
     "dependencies": {
         "@nuxt/eslint": "1.10.0",
+        "@nuxt/icon": "^2.1.0",
         "@nuxt/ui": "4.1.0",
+        "echarts": "^6.0.0",
         "eslint": "^9.0.0",
         "nuxt": "^4.2.0",
+        "nuxt-echarts": "1.0.1",
         "typescript": "^5.6.3",
         "vue": "^3.5.22",
+        "vue-echarts": "^8.0.0",
         "vue-router": "^4.6.3"
+    },
+    "devDependencies": {
+        "@iconify-json/material-symbols": "^1.2.44"
     }
 }
