@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { api_baseurl } from '~/config'
+
 
 async function getDeviceList(): Promise<DeviceData[] | undefined> {
     try {
-        return await $fetch("http://localhost:3000/api/device")
+        return await $fetch(`${api_baseurl}/device`)
     } catch (e) {
         console.error(e)
     }
