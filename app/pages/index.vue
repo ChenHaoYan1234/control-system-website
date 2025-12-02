@@ -36,7 +36,7 @@ async function refreshDeviceList() {
                 <UButton 
                     icon="material-symbols:refresh-rounded" :loading="isLoading" color="primary" variant="solid"
                     @click="refreshDeviceList">
-                    刷新设备
+                    刷新
                 </UButton>
             </div>
         </UCard>
