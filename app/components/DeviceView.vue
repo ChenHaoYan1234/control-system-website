@@ -26,15 +26,21 @@ function startEdit() {
     old_device = device
 }
 
-function saveDeviceName() {
+async function saveDeviceName() {
+    try{
     changingDeviceName.value = false
-    $fetch(`${api_baseurl}/device`, {
+    await $fetch(`${api_baseurl}/device`, {
         method: "PUT",
         body: {
             deviceName: device,
             deviceUUID: props.deviceUuid
         }
     })
+    }catch (e){
+        console.log(e)
+        device = old_device
+        changingDeviceName.value = false
+    }
 }
 
 function unSaveDeviceName() {

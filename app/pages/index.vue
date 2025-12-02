@@ -23,6 +23,10 @@ async function refreshDeviceList() {
 
 <template>
     <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+            校园环境管理系统
+        </h1>
+
         <!-- 顶部操作栏 -->
         <UCard class="mb-6">
             <div class="flex items-center justify-between">
@@ -60,6 +64,8 @@ async function refreshDeviceList() {
 
 <style scoped>
 .container {
-    max-width: 1280px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 </style>
